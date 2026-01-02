@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Radio } from "@base-ui-components/react/radio";
-import { RadioGroup as BaseRadioGroup } from "@base-ui-components/react/radio-group";
+import { Radio } from "@base-ui/react/radio";
+import { RadioGroup as BaseRadioGroup } from "@base-ui/react/radio-group";
 
 import { cn } from "../utils";
 import { cva, type VariantProps } from "class-variance-authority";
@@ -19,7 +19,7 @@ export function Group({
 }
 
 const radioVariants = cva(
-  "bg-white aria-invalid:border-ppx-red-5 aspect-square shrink-0 rounded-full border border-ppx-neutral-10 shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 ",
+  "relative inline-flex bg-ppx-background aria-invalid:border-ppx-red-5 aspect-square shrink-0 rounded-full border border-ppx-neutral-10 shadow-xs transition-[color,box-shadow] outline-none focus-visible:ring-[3px] data-disabled:cursor-not-allowed data-disabled:opacity-50 items-center justify-center",
   {
     variants: {
       variant: {
@@ -71,7 +71,7 @@ export function Item({
           className={cn(
             "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2",
             size === "sm" && "size-2",
-            size === undefined && "size-3",
+            size === undefined || size === "default" ? "size-3" : "",
             size === "lg" && "size-3.5",
           )}
         >

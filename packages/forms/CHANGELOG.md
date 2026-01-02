@@ -1,5 +1,34 @@
 # @px-ui/forms
 
+## 6.0.1
+
+### Patch Changes
+
+- Updated dependencies [3acd469]
+  - @px-ui/core@3.1.1
+
+## 6.0.0
+
+### Minor Changes
+
+- b83935a: Added new toast component, and some minor upgrades
+
+### Patch Changes
+
+- Updated dependencies [b83935a]
+  - @px-ui/core@3.1.0
+
+## 5.0.0
+
+### Major Changes
+
+- 06717d7: Added new phone input, collapsible components
+
+### Patch Changes
+
+- Updated dependencies [06717d7]
+  - @px-ui/core@3.0.0
+
 ## 4.1.0
 
 ### Minor Changes
